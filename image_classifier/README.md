@@ -6,7 +6,7 @@ Part 1 of the project involves implementing an image classifier that is trained 
 Part 2 involves converting the classifier into an application that can be used for any images. GPU processing is recommended, although the application will also work without GPU processing, albeit slower.
 
 ## Date
-Download/extract/place the training [download link](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html) dataset in the following folder structure:
+If flower dataset is used, download/extract/place the image dataset [download link](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html) in the following folder structure:
 
 ~~~~~~~
         project
@@ -26,6 +26,7 @@ Download/extract/place the training [download link](http://www.robots.ox.ac.uk/~
                     |-- etc
 ~~~~~~~
 
+If other images are used, place them in similar folder structure as above.
 
 ## How To Run It
 Part 1: Run Image Classifier Project.ipynb
