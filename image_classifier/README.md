@@ -5,8 +5,31 @@ Part 1 of the project involves implementing an image classifier that is trained 
 
 Part 2 involves converting the classifier into an application that can be used for any images. GPU processing is recommended, although the application will also work without GPU processing, albeit slower.
 
+## Date
+Download/extract/place the training ([download link](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html) ) dataset in the following folder structure:
+
+~~~~~~~
+        project
+          |-- codes
+          |-- data
+               |--- train
+                    |-- class 1
+                    |-- class 2
+                    |-- etc
+               |-- valid
+                    |-- class 1
+                    |-- class 2
+                    |-- etc
+               |-- test
+                    |-- class 1
+                    |-- class 2
+                    |-- etc
+~~~~~~~
+
+
 ## How To Run It
 Part 1: Run Image Classifier Project.ipynb
+
 Part 2: Run train.py to train a new network on a data set. Run predict.py to predict image class from an image.
 
 The train.py file accepts the following arguments:
