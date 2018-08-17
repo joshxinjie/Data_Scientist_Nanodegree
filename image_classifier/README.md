@@ -1,9 +1,11 @@
 # Image Classifier
 
 ## Description
+This project involves the implementation of an image classification application using a deep learning model on a dataset of images. The trained model will then be used to classify new images. GPU processing is recommended for this project, although the application will also work without GPU processing, albeit slower.
+
 Part 1 of the project involves implementing an image classifier that is trained on a flower data set. There are 102 different types of flowers, where there are ~20 images per flower to train on.
 
-Part 2 involves converting the classifier into an application that can be used for any images. GPU processing is recommended, although the application will also work without GPU processing, albeit slower.
+Part 2 involves converting the notebook into a python application that can be run from the command-line and can be used for any images.
 
 ## Date
 If flower dataset is used, download/extract/place the image dataset [download link](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html) in the following folder structure:
