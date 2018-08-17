@@ -14,15 +14,21 @@ If flower dataset is used, download/extract/place the image dataset [download li
           |-- data
                |--- train
                     |-- class 1
+                        |-- images of class 1
                     |-- class 2
+                        |-- images of class 2
                     |-- etc
                |-- valid
                     |-- class 1
+                        |-- images of class 1
                     |-- class 2
+                        |-- images of class 2
                     |-- etc
                |-- test
                     |-- class 1
+                        |-- images of class 1
                     |-- class 2
+                        |-- images of class 2
                     |-- etc
 ~~~~~~~
 
