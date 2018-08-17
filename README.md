@@ -1,7 +1,7 @@
 # Data_Scientist_Nanodegree
 
 ## Projects completed for the Udacity Data Scientists Nanodegree Term 1
-[1. Finding Donors](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/finding_donors): Build an algorithm that best identifies potential donors
+[1. Finding Donors](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/finding_donors): Build an algorithm that best identifies potential donors.
 
 [2. Image Classifier](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/image_classifier): Implement an image classifier with PyTorch. 
 
