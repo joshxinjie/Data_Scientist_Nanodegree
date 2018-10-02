@@ -36,4 +36,4 @@ Put the data files in the following folder structure
 ## Installations
 Anaconda, Seaborn, Nltk, Re, WordCloud, XGBoost, Shap, Bokeh
 
-To run the section of the code analysis involving Bokeh, you need to get a Geocoding API from google [here](https://developers.google.com/maps/documentation/geocoding/get-api-key)
+To run the section of the code involving Bokeh, you need to get a Geocoding API from google [here](https://developers.google.com/maps/documentation/geocoding/get-api-key)
