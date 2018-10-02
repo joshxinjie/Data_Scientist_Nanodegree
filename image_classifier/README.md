@@ -7,7 +7,7 @@ Part 1 of the project involves implementing an image classifier that is trained 
 
 Part 2 involves converting the notebook into a python application that can be run from the command-line and can be used for any images.
 
-## Date
+## Data
 If flower dataset is used, download/extract/place the image dataset [download link](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html) in the following folder structure:
 
 ~~~~~~~
