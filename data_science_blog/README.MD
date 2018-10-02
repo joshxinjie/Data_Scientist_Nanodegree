@@ -16,7 +16,7 @@ The article detailing the key findings of this project can be found [here](https
 2. seattle_airbnb_analysis.ipynb: Contains all the analysis for the Seattle Airbnb datasets
 
 ## Data
-The data used in this project are the Boston Airbnb Open Data and the Seattle Airbnb Open Data from kaggle. They can be download from this [link](https://www.kaggle.com/airbnb/boston), as well as this [link](https://www.kaggle.com/airbnb/seattle).
+The data used in this project are the Boston Airbnb Open Data and the Seattle Airbnb Open Data from kaggle. They can be downloaded from this [link](https://www.kaggle.com/airbnb/boston), as well as this [link](https://www.kaggle.com/airbnb/seattle).
 
 Put the data files in the following folder structure
 ~~~~~~~
