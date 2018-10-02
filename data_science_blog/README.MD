@@ -1,7 +1,7 @@
 # Write a Data Science Blog
 
 ## Description
-In this project, I will investigate why certain Airbnb listings are more successful than others. The project will focus on Airbnb listings in Boston and Seattle. Estimated revenues of listings will also be used to define the success of a listing. The primary questions that will be answered in this project are:
+In this project, I will investigate why certain Airbnb listings are more successful than others. This analysis will focus on Airbnb listings in Boston and Seattle. Estimated revenues of listings will also be used to define the success of a listing. The primary questions that will be answered in this project are:
 
 1. How much revenue do Airbnb hosts make?
 2. What are the best types of property to rent?
