@@ -9,7 +9,9 @@ In this project, I will investigate why certain Airbnb listings are more success
 4. Which are the best areas to rent?
 5. What should you write in a listing name to attract more attention?
 
-The article detailing the key findings of this project can be found [here](https://medium.com/p/6dbf178942af/edit).
+In addition, several models (Linear Models, XGBoost) were trained to predict the estimated revenues of listings. The results of the models will be used to explore which are the most important factors in achieving higher revenues.
+
+The article detailing the key findings of this project can be found [here](https://medium.com/@joshxinjielee/uncovering-the-secrets-to-higher-airbnb-revenues-6dbf178942af).
 
 ## File Descriptions
 1. boston_airbnb_analysis.ipynb: Contains all the analysis for the Boston Airbnb datasets
