@@ -64,9 +64,9 @@ If you want to use the MLP Neural Network model with pre-trained GloVe embedding
 
     1. To run ETL pipeline that cleans data and stores in database
         `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
-    2.a To run ML pipeline that trains classifier (Adaboost with Tfidf Vectorizer) and saves
+    2a. To run ML pipeline that trains classifier (Adaboost with Tfidf Vectorizer) and saves
         `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
-    2.b To run ML pipeline that trains classifier (MLP with GloVe Embeddings) and saves
+    2b. To run ML pipeline that trains classifier (MLP with GloVe Embeddings) and saves
         `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl --model_type 2`
 
 2. In the app directory, run the following command to run the web app.
