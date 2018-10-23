@@ -178,18 +178,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
         category_names - the names of all message categories
     """
     Y_pred = model.predict(X_test)
-    '''
-    for i in range(36):
-        category = category_names[i]
-        accuracy = accuracy_score(Y_test.iloc[:,i], Y_pred[:,i])
-        precision = precision_score(Y_test.iloc[:,i], Y_pred[:,i],\
-                                    average='micro')
-        recall = recall_score(Y_test.iloc[:,i], Y_pred[:,i], average='micro')
-        f1 = f1_score(Y_test.iloc[:,i], Y_pred[:,i], average='micro')
-        print(category)
-        print("\t Accuracy: %.4f \t Precision: %.4f \t Recall: %.4f \t F1-Score: %.4f \n" %\
-              (accuracy, precision, recall, f1))
-    '''
+
     # Get names of all categories
     category_names = Y_test.columns.tolist()
 
