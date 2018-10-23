@@ -59,7 +59,7 @@ If you want to use the MLP Neural Network model with pre-trained GloVe embedding
           |-- models
 ~~~~~~~
 
-### Instructions:
+## Instructions:
 1. In the disaster_response_pipeline directory
 
     1. To run ETL pipeline that cleans data and stores in database
