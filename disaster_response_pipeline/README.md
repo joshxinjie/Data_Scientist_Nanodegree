@@ -11,6 +11,8 @@ Two types of models are available to classify the messages.
 
 Finally, this project contains a web app where you can input a message and get classification results.
 
+![Screenshot of Web App](webapp_screenshot.JPG)
+
 ## File Description
 ~~~~~~~
         disaster_response_pipeline
