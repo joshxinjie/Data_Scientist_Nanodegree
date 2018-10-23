@@ -1,0 +1,62 @@
+# download necessary NLTK data
+import nltk
+nltk.download(['punkt', 'wordnet'])
+
+# import statements
+import re
+import pandas as pd
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+
+url_regex = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
+
+
+def load_data():
+    df = pd.read_csv('corporate_messaging.csv', encoding='latin-1')
+    df = df[(df["category:confidence"] == 1) & (df['category'] != 'Exclude')]
+    X = df.text.values
+    y = df.category.values
+    return X, y
+
+
+def tokenize(text):
+    detected_urls = re.findall(url_regex, text)
+    for url in detected_urls:
+        text = text.replace(url, "urlplaceholder")
+
+    tokens = word_tokenize(text)
+    lemmatizer = WordNetLemmatizer()
+
+    clean_tokens = []
+    for tok in tokens:
+        clean_tok = lemmatizer.lemmatize(tok).lower().strip()
+        clean_tokens.append(clean_tok)
+
+    return clean_tokens
+
+
+X, y = load_data()
+for message in X[:5]:
+    tokens = tokenize(message)
+    print(message)
+    print(tokens, '\n')
+
+------------------------------------------------------------------------------------
+
+Output:
+Barclays CEO stresses the importance of regulatory and cultural reform in financial services at Brussels conference  http://t.co/Ge9Lp7hpyG
+['barclays', 'ceo', 'stress', 'the', 'importance', 'of', 'regulatory', 'and', 'cultural', 'reform', 'in', 'financial', 'service', 'at', 'brussels', 'conference', 'urlplaceholder'] 
+
+Barclays announces result of Rights Issue http://t.co/LbIqqh3wwG
+['barclays', 'announces', 'result', 'of', 'rights', 'issue', 'urlplaceholder'] 
+
+Barclays publishes its prospectus for its å£5.8bn Rights Issue: http://t.co/YZk24iE8G6
+['barclays', 'publishes', 'it', 'prospectus', 'for', 'it', 'å£5.8bn', 'rights', 'issue', ':', 'urlplaceholder'] 
+
+Barclays Group Finance Director Chris Lucas is to step down at the end of the week due to ill health http://t.co/nkuHoAfnSD
+['barclays', 'group', 'finance', 'director', 'chris', 'lucas', 'is', 'to', 'step', 'down', 'at', 'the', 'end', 'of', 'the', 'week', 'due', 'to', 'ill', 'health', 'urlplaceholder'] 
+
+Barclays announces that Irene McDermott Brown has been appointed as Group Human Resources Director http://t.co/c3fNGY6NMT
+['barclays', 'announces', 'that', 'irene', 'mcdermott', 'brown', 'ha', 'been', 'appointed', 'a', 'group', 'human', 'resources', 'director', 'urlplaceholder'] 
+
+Next
