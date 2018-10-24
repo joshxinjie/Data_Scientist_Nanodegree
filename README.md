@@ -5,12 +5,12 @@
 
 2. [Image Classifier](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/image_classifier): Implement an image classifier with PyTorch. 
 
-3. [Identify Customer Segment](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/identify_customer_segment): Apply unsupervised learning techniques to identify facets of the population that are most likely to be purchasers of products for a mailout campaign.
+3. [Identify Customer Segment](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/identify_customer_segment): Apply unsupervised learning techniques to identify clusters of the population that are most likely to be purchasers of products for a mailout campaign.
 
 ## Projects completed for the Udacity Data Scientists Nanodegree Term 2
 4. [Write a Data Science Blog Post](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/data_science_blog): Analyze Airbnb data in Boston and Seattle to find out what kind of listings are more likely to have  higher revenues. Accompanying blog post can be found [here](https://towardsdatascience.com/uncovering-the-secrets-to-higher-airbnb-revenues-6dbf178942af)
 
-5. Build Pipelines to Classify Messages with Figure Eight
+5. [Build Pipelines to Classify Messages with Figure Eight](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/disaster_response_pipeline): Build ETL and ML pipelines to classify messages sent during a disaster. 
 
 6. Design a Recommendation Engine with IBM
 
