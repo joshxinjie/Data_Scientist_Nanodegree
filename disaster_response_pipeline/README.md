@@ -75,3 +75,6 @@ If you want to use the MLP Neural Network model with pre-trained GloVe embedding
     `python run.py`
 
 3. Go to http://localhost:3001 to view the web app
+
+## Installations
+Anaconda, Nltk, re, SQLAlchemy
