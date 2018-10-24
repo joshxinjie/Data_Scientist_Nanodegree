@@ -10,7 +10,7 @@
 ## Projects completed for the Udacity Data Scientists Nanodegree Term 2
 4. [Write a Data Science Blog Post](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/data_science_blog): Analyze Airbnb data in Boston and Seattle to find out what kind of listings are more likely to have  higher revenues. Accompanying blog post can be found [here](https://towardsdatascience.com/uncovering-the-secrets-to-higher-airbnb-revenues-6dbf178942af)
 
-5. [Build Pipelines to Classify Messages with Figure Eight](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/disaster_response_pipeline): Build ETL and ML pipelines to classify messages sent during a disaster. 
+5. [Build Pipelines to Classify Messages with Figure Eight](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/disaster_response_pipeline): Build ETL and ML pipelines to classify messages sent during disasters. 
 
 6. Design a Recommendation Engine with IBM
 
