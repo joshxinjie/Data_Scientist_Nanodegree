@@ -15,3 +15,8 @@
 6. Design a Recommendation Engine with IBM
 
 7. Data Science Capstone Project
+
+## Portfolio Exercises
+These are optional, ungraded exercises for the course
+
+[Starbucks Portfolio Exercise](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/starbucks_portfolio_exercise): Implement uplift models to identify which customers we should send promotions to entice them to purchase a product.
