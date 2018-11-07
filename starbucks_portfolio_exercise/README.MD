@@ -14,6 +14,8 @@ There are numerous approaches to tackle this problem. I have chosen to implement
 3. SIngle Model with Treatment Indicator Variable
 4. Four Quadrant Approach
 
+The article for this project can be found [here](https://medium.com/datadriveninvestor/simple-machine-learning-techniques-to-improve-your-marketing-strategy-demystifying-uplift-models-dc4fb3f927a2).
+
 ## File Description
 1. training.csv: Contains training data
 2. Test.csv: Contains test data
