@@ -19,4 +19,4 @@
 ## Portfolio Exercises
 These are optional, ungraded exercises for the course
 
-[Starbucks Portfolio Exercise](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/starbucks_portfolio_exercise): Implement uplift models to identify which customers we should send promotions to entice them to purchase a product.
+[Starbucks Portfolio Exercise](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/starbucks_portfolio_exercise): Implement uplift models to identify which customers we should send promotions to entice them to purchase a product. Accompanying blog post can be found [here](https://medium.com/datadriveninvestor/simple-machine-learning-techniques-to-improve-your-marketing-strategy-demystifying-uplift-models-dc4fb3f927a2)
