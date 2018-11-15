@@ -12,7 +12,7 @@
 
 5. [Build Pipelines to Classify Messages with Figure Eight](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/disaster_response_pipeline): Build ETL and ML pipelines to classify messages sent during disasters. 
 
-6. Design a Recommendation Engine with IBM
+6. [Design a Recommendation Engine with IBM](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/ibm_recommendations): Implement recommendation techniques using data from the IBM Watson Studio platform.
 
 7. Data Science Capstone Project
 
