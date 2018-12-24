@@ -14,7 +14,7 @@
 
 6. [Design a Recommendation Engine with IBM](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/ibm_recommendations): Implement recommendation techniques using data from the IBM Watson Studio platform.
 
-7. Data Science Capstone Project. Explore data from Starbucks Rewards Mobile App and implement a promotional strategy with uplift models. Accompanying blog post can be found [here](https://medium.com/@joshxinjielee/designing-and-testing-a-promotion-strategy-for-starbucks-2f25ec9ae00c)
+7. [Data Science Capstone Project](https://github.com/joshxinjie/Data_Scientist_Nanodegree/tree/master/capstone). Explore data from Starbucks Rewards Mobile App and implement a promotional strategy with uplift models. Accompanying blog post can be found [here](https://medium.com/@joshxinjielee/designing-and-testing-a-promotion-strategy-for-starbucks-2f25ec9ae00c)
 
 ## Portfolio Exercises
 These are optional, ungraded exercises for the course
