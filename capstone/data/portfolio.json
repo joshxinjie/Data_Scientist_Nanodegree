@@ -1,0 +1,10 @@
+{"reward": 10, "channels": ["email", "mobile", "social"], "difficulty": 10, "duration": 7.0, "offer_type": "bogo", "id": "ae264e3637204a6fb9bb56bc8210ddfd"}
+{"reward": 10, "channels": ["web", "email", "mobile", "social"], "difficulty": 10, "duration": 5.0, "offer_type": "bogo", "id": "4d5c57ea9a6940dd891ad53e9dbe8da0"}
+{"reward": 0, "channels": ["web", "email", "mobile"], "difficulty": 0, "duration": 4.0, "offer_type": "informational", "id": "3f207df678b143eea3cee63160fa8bed"}
+{"reward": 5, "channels": ["web", "email", "mobile"], "difficulty": 5, "duration": 7.0, "offer_type": "bogo", "id": "9b98b8c7a33c4b65b9aebfe6a799e6d9"}
+{"reward": 5, "channels": ["web", "email"], "difficulty": 20, "duration": 10.0, "offer_type": "discount", "id": "0b1e1539f2cc45b7b9fa7c272da2e1d7"}
+{"reward": 3, "channels": ["web", "email", "mobile", "social"], "difficulty": 7, "duration": 7.0, "offer_type": "discount", "id": "2298d6c36e964ae4a3e7e9706d1fb8c2"}
+{"reward": 2, "channels": ["web", "email", "mobile", "social"], "difficulty": 10, "duration": 10.0, "offer_type": "discount", "id": "fafdcd668e3743c1bb461111dcafc2a4"}
+{"reward": 0, "channels": ["email", "mobile", "social"], "difficulty": 0, "duration": 3.0, "offer_type": "informational", "id": "5a8bc65990b245e5a138643cd4eb9837"}
+{"reward": 5, "channels": ["web", "email", "mobile", "social"], "difficulty": 5, "duration": 5.0, "offer_type": "bogo", "id": "f19421c1d4aa40978ebb69ca19b0e20d"}
+{"reward": 2, "channels": ["web", "email", "mobile"], "difficulty": 10, "duration": 7.0, "offer_type": "discount", "id": "2906b810c7d4411798c6938adc9daaa5"}
