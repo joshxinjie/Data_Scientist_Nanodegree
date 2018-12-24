@@ -54,44 +54,44 @@ The .csv files
 ## Summary of Results
 The baseline strategy will be to send the offer to everyone in the dataset. The baseline results will serve as a benchmark that we will improve on. The uplift model will be the machine-learning based promotion strategy implemented for this project.
 
-### Offer id 0: Discount promotion with a difficulty of $20, a reward of $5, and a validity period of 10 days
-Baseline Strategy ~ Validation NIR: -$5,268.54, Test NIR: -$4,889.48
+#### Offer id 0: Discount promotion with a difficulty of $20, a reward of $5, and a validity period of 10 days
+Baseline Strategy ~ Validation NIR: -$5,268.54, Test NIR: -$4,889.48 <br />
 Uplift Model ~ Validation NIR: $30.06, Test NIR: -$74.16
 
-### Offer id 1: Discount promotion with a difficulty of $7, a reward of $3, and a validity period of 7 days
-Baseline Strategy ~ Validation NIR: -$6,168.08, Test NIR: -$4,732.18
+#### Offer id 1: Discount promotion with a difficulty of $7, a reward of $3, and a validity period of 7 days
+Baseline Strategy ~ Validation NIR: -$6,168.08, Test NIR: -$4,732.18 <br />
 Uplift Model ~ Validation NIR: $18.77, Test NIR: $0
 
-### Offer id 2: Discount promotion with a difficulty of $10, a reward of $2, and a validity period of 7 days
-Baseline Strategy ~ Validation NIR: -$5,600.92, Test NIR: -$5,519.62
+#### Offer id 2: Discount promotion with a difficulty of $10, a reward of $2, and a validity period of 7 days
+Baseline Strategy ~ Validation NIR: -$5,600.92, Test NIR: -$5,519.62 <br />
 Uplift Model ~ Validation NIR: $10.36, Test NIR: $0
 
-### Offer id 3: Informational promotion with a validity period of 4 days
-Baseline Strategy ~ Validation NIR: -$4,193.67, Test NIR: -$8,754.95
+#### Offer id 3: Informational promotion with a validity period of 4 days
+Baseline Strategy ~ Validation NIR: -$4,193.67, Test NIR: -$8,754.95 <br />
 Uplift Model ~ Validation NIR: $45.96, Test NIR: $0
 
-### Offer id 4: Buy-one-get-one-free promotion with a difficulty of $10, a reward of $10 and a validity period of 5 days
-Baseline Strategy ~ Validation NIR: -$4,634.69, Test NIR: -$7027.36
+#### Offer id 4: Buy-one-get-one-free promotion with a difficulty of $10, a reward of $10 and a validity period of 5 days
+Baseline Strategy ~ Validation NIR: -$4,634.69, Test NIR: -$7027.36 <br />
 Uplift Model ~ Validation NIR: $31.63, Test NIR: -$37.27
 
-### Offer id 5: Informational promotion with a validity period of 5 days
-Baseline Strategy ~ Validation NIR: -$5,188.06, Test NIR: -$6,707.87
+#### Offer id 5: Informational promotion with a validity period of 5 days
+Baseline Strategy ~ Validation NIR: -$5,188.06, Test NIR: -$6,707.87 <br />
 Uplift Model ~ Validation NIR: $25.78, Test NIR: -$24.7
 
-### Offer id 6: Buy-one-get-one-free promotion with a difficulty of $5, a reward of $5 and a validity period of 7 days.
-Baseline Strategy ~ Validation NIR: -$4,558.54, Test NIR: -$6,542.62
+#### Offer id 6: Buy-one-get-one-free promotion with a difficulty of $5, a reward of $5 and a validity period of 7 days.
+Baseline Strategy ~ Validation NIR: -$4,558.54, Test NIR: -$6,542.62 <br />
 Uplift Model ~ Validation NIR: $32.10, Test NIR: -$88.43
 
-### Offer id 7: Buy-one-get-one-free promotion with a difficulty of $10, a reward of $10 and a validity period of 7 days.
-Baseline Strategy ~ Validation NIR: -$4,842.09, Test NIR: -$6,207.28
+#### Offer id 7: Buy-one-get-one-free promotion with a difficulty of $10, a reward of $10 and a validity period of 7 days.
+Baseline Strategy ~ Validation NIR: -$4,842.09, Test NIR: -$6,207.28 <br />
 Uplift Model ~ Validation NIR: $17.13, Test NIR: -$856.38
 
-### Offer id 8: Buy-one-get-one-free promotion with a difficulty of $5, a reward of $5and a validity period of 5 days.
-Baseline Strategy ~ Validation NIR: -$5,779.91, Test NIR: -$7,508.97
+#### Offer id 8: Buy-one-get-one-free promotion with a difficulty of $5, a reward of $5and a validity period of 5 days.
+Baseline Strategy ~ Validation NIR: -$5,779.91, Test NIR: -$7,508.97 <br />
 Uplift Model ~ Validation NIR: $502, Test NIR: -$38.95
 
-### Offer id 9: Discount promotion with a difficulty of $10, a reward of $2 and a validity period of 10 days
-Baseline Strategy ~ Validation NIR: -$3,927.56, Test NIR: -$5,006.65
+#### Offer id 9: Discount promotion with a difficulty of $10, a reward of $2 and a validity period of 10 days
+Baseline Strategy ~ Validation NIR: -$3,927.56, Test NIR: -$5,006.65 <br />
 Uplift Model ~ Validation NIR: $52.11, Test NIR: -$60.37
 
 While we are able to optimize the promotional strategies to achieve positive NIRs during the validation months, the current strategies do not produce positive results during the test months. I will hope to improve the strategies' performance in the future through further refinements.
