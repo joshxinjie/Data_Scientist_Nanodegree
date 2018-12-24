@@ -86,7 +86,7 @@ Uplift Model ~ Validation NIR: $32.10, Test NIR: -$88.43
 Baseline Strategy ~ Validation NIR: -$4,842.09, Test NIR: -$6,207.28 <br />
 Uplift Model ~ Validation NIR: $17.13, Test NIR: -$856.38
 
-#### Offer id 8: Buy-one-get-one-free promotion with a difficulty of $5, a reward of $5and a validity period of 5 days.
+#### Offer id 8: Buy-one-get-one-free promotion with a difficulty of $5, a reward of $5 and a validity period of 5 days.
 Baseline Strategy ~ Validation NIR: -$5,779.91, Test NIR: -$7,508.97 <br />
 Uplift Model ~ Validation NIR: $502, Test NIR: -$38.95
 
