@@ -7,9 +7,11 @@ The goal of this project will be to implement a machine-learning based promotion
 
 There are 10 different types of offers available. Starbucks will send these offer to users of the mobile app on a weekly basis. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). Some users might not receive any offer during certain weeks.
 
-For this project, each offer type will have its own individualized promotional strategy model.
+For this project, each offer type will have its own individualized promotional strategy model. Customers' transactional behavior will be aggregated on a monthly basis. The first 15 months are be used as training data for the promotional strategy. Months 16, 17 will be the validation months, and they will be used to tune the promotional strategies through grid search. Months 18 and 19 will serve as the tests months, and they will act as the final check of our promotional strategies.
 
-The accompanying blog post can be found [here](https://medium.com/@joshxinjielee/designing-and-testing-a-promotion-strategy-for-starbucks-2f25ec9ae00c)
+This proved to be a relatively challenging problem as evident by the results obtained.
+
+The detailed write-up of the project can be found at the accompanying blog [post](https://medium.com/@joshxinjielee/designing-and-testing-a-promotion-strategy-for-starbucks-2f25ec9ae00c)
 
 ## File Description
 ~~~~~~~
@@ -48,6 +50,51 @@ The .ipynb and .py files
 The .csv files
 1. new_profile.csv: Contains information from profile.json with missing values filled using machine learning.
 2. monthly_data_rolling.csv: Monthly time-series summary of user transactional behavior.
+
+## Summary of Results
+The baseline strategy will be to send the offer to everyone in the dataset. The baseline results will serve as a benchmark that we will improve on. The uplift model will be the machine-learning based promotion strategy implemented for this project.
+
+Offer id 0: Discount promotion with a difficulty of $20, a reward of $5, and a validity period of 10 days
+Baseline Strategy ~ Validation NIR: -$5,268.54, Test NIR: -$4,889.48
+Uplift Model ~ Validation NIR: $30.06, Test NIR: -$74.16
+
+Offer id 1: Discount promotion with a difficulty of $7, a reward of $3, and a validity period of 7 days
+Baseline Strategy ~ Validation NIR: -$6,168.08, Test NIR: -$4,732.18
+Uplift Model ~ Validation NIR: $18.77, Test NIR: $0
+
+Offer id 2: Discount promotion with a difficulty of $10, a reward of $2, and a validity period of 7 days
+Baseline Strategy ~ Validation NIR: -$5,600.92, Test NIR: -$5,519.62
+Uplift Model ~ Validation NIR: $10.36, Test NIR: $0
+
+Offer id 3: Informational promotion with a validity period of 4 days
+Baseline Strategy ~ Validation NIR: -$4,193.67, Test NIR: -$8,754.95
+Uplift Model ~ Validation NIR: $45.96, Test NIR: $0
+
+Offer id 4: Buy-one-get-one-free promotion with a difficulty of $10, a reward of $10 and a validity period of 5 days
+Baseline Strategy ~ Validation NIR: -$4,634.69, Test NIR: -$7027.36
+Uplift Model ~ Validation NIR: $31.63, Test NIR: -$37.27
+
+Offer id 5: Informational promotion with a validity period of 5 days
+Baseline Strategy ~ Validation NIR: -$5,188.06, Test NIR: -$6,707.87
+Uplift Model ~ Validation NIR: $25.78, Test NIR: -$24.7
+
+Offer id 6: Buy-one-get-one-free promotion with a difficulty of $5, a reward of $5 and a validity period of 7 days.
+Baseline Strategy ~ Validation NIR: -$4,558.54, Test NIR: -$6,542.62
+Uplift Model ~ Validation NIR: $32.10, Test NIR: -$88.43
+
+Offer id 7: Buy-one-get-one-free promotion with a difficulty of $10, a reward of $10 and a validity period of 7 days.
+Baseline Strategy ~ Validation NIR: -$4,842.09, Test NIR: -$6,207.28
+Uplift Model ~ Validation NIR: $17.13, Test NIR: -$856.38
+
+Offer id 8: Buy-one-get-one-free promotion with a difficulty of $5, a reward of $5and a validity period of 5 days.
+Baseline Strategy ~ Validation NIR: -$5,779.91, Test NIR: -$7,508.97
+Uplift Model ~ Validation NIR: $502, Test NIR: -$38.95
+
+Offer id 9: Discount promotion with a difficulty of $10, a reward of $2 and a validity period of 10 days
+Baseline Strategy ~ Validation NIR: -$3,927.56, Test NIR: -$5,006.65
+Uplift Model ~ Validation NIR: $52.11, Test NIR: -$60.37
+
+While we are able to optimize the promotional strategies to achieve positive NIRs during the validation months, the current strategies do not produce positive results during the test months. I will hope to improve the strategies' performance in the future through further refinements.
 
 ## Instructions
 1. Run input_missing_data.ipynb to generate new_profile.csv.
