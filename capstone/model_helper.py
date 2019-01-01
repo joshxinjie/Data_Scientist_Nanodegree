@@ -106,8 +106,8 @@ def generate_offer_monthly_data(offer_name, monthly_data, start_month=2,\
         new_monthly_data - the subset of the original monthly data relevant to 
         the current offer
     """
-    start_month = 2
-    end_month = 19
+    #start_month = 2
+    #end_month = 19
 
     for month_num in range(start_month,end_month+1):
         month_subset = monthly_data[monthly_data['month_num']==month_num]
