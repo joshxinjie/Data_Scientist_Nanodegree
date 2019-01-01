@@ -18,48 +18,48 @@ The goal of the project is to apply unsupervised learning techniques to identify
 2. The mail-order company is less popular with these groups (A to G) of individuals:
 
  Group A:
- - elderly
- - prefers shopping at brick and mortar stores as opposed to online shopping
- - more financially inconspicuous
- - more religious, rational, dutiful, traditional-minded and cultural-minded
+  - elderly
+  - prefers shopping at brick and mortar stores as opposed to online shopping
+  - more financially inconspicuous
+  - more religious, rational, dutiful, traditional-minded and cultural-minded
 
  Group B:
- - low-income home renters
- - less interested financially
- - live in households with larger family sizes
+  - low-income home renters
+  - less interested financially
+  - live in households with larger family sizes
 
  Group C:
- - low-income couples with no children
- - more materialistic and health conscious
- - more risk-averse with their insurance purchases
- - live in buildings that are more densely occupied and contain more households with larger family sizes
+  - low-income couples with no children
+  - more materialistic and health conscious
+  - more risk-averse with their insurance purchases
+  - live in buildings that are more densely occupied and contain more households with larger family sizes
 
  Group D:
- - are financially inconspicuous
- - are foreign born
- - live in less desirable neighbourhoods
- - prioritize low cost when purchasing energy
- - more likely to be materialistic, rational and traditional-minded
+  - are financially inconspicuous
+  - are foreign born
+  - live in less desirable neighbourhoods
+  - prioritize low cost when purchasing energy
+  - more likely to be materialistic, rational and traditional-minded
 
  Group E:
- - middle class individuals who live in rural areas
- - work as farmers or in occupations that support the farming community
- - high purchasing power in the area they live in
- - reside in areas that are located in what was formerly known as East Germany
+  - middle class individuals who live in rural areas
+  - work as farmers or in occupations that support the farming community
+  - high purchasing power in the area they live in
+  - reside in areas that are located in what was formerly known as East Germany
 
  Group F:
- - middleclass family with young or teenage children as well as single-parents and couples without children
- - live in multi-generational or multi-person household
+  - middleclass family with young or teenage children as well as single-parents and couples without children
+  - live in multi-generational or multi-person household
 
  Group G:
- - demanding shoppers
- - consume a lot of traditional (not online) advertisments or no advertisements at all
- - low-income earners who have little aspirations of moving up the income ladder, or are financially stable and own homes
- - financially prepared and like to invest
- - like going on vacation for cultural sightseeing and/or participating in package tours
- - less likely to travel within their home country
- - recent immigrants.
- - live in more desirable neighbourhoods
+  - demanding shoppers
+  - consume a lot of traditional (not online) advertisments or no advertisements at all
+  - low-income earners who have little aspirations of moving up the income ladder, or are financially stable and own homes
+  - financially prepared and like to invest
+  - like going on vacation for cultural sightseeing and/or participating in package tours
+  - less likely to travel within their home country
+  - recent immigrants.
+  - live in more desirable neighbourhoods
 
 3. This mail-order company is indifferent to this group of individuals who:
  - are young unmarried males
