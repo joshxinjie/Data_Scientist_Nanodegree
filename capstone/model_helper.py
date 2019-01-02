@@ -21,9 +21,12 @@ def promotion_strategy_indicator(X_test, model, offer_num):
         promotion - The array containing the promotion strategy
     """
     offer_name = "offer_id_"+str(offer_num)
+    
+    # Predict probaility of profit if given offer
     X_test[offer_name] =  1
     preds_treat = model.predict_proba(X_test, ntree_limit=model.best_ntree_limit)
     
+    # Predict probaility of profit if not given an offer
     X_test[offer_name] =  0
     preds_cont = model.predict_proba(X_test, ntree_limit=model.best_ntree_limit)
     
@@ -106,13 +109,13 @@ def generate_offer_monthly_data(offer_name, monthly_data, start_month=2,\
         new_monthly_data - the subset of the original monthly data relevant to 
         the current offer
     """
-    #start_month = 2
-    #end_month = 19
 
     for month_num in range(start_month,end_month+1):
+        # get the current month's data
         month_subset = monthly_data[monthly_data['month_num']==month_num]
         month_subset = month_subset[(month_subset[offer_name]==1) |\
                                     (month_subset['offer_id_10']==1)]
+        # get individuals who received the offer during the month
         month_offer_indiv =\
         month_subset[month_subset[offer_name]==1].per_id.unique()
         if month_num == start_month:
@@ -228,11 +231,15 @@ def grid_search_indicator_pca(offer_num, max_depth_list, upsamp_ratio_list,\
     len(max_depth_list) * len(upsamp_ratio_list) * len(min_child_weight_list)
     cnt = 1
     
+    # record parameters for best valid nir
     best_valid_nir = 0
     best_test_nir = 0
     best_depth = 0
     best_ratio = 0
     best_weight = 0
+    
+    # record parameters for positive valid and test nir
+    pos_strat_params = []
     
     offer_name = "offer_id_" + str(offer_num)
     
@@ -275,7 +282,7 @@ def grid_search_indicator_pca(offer_num, max_depth_list, upsamp_ratio_list,\
                                           gamma = 0.1,\
                                           silent = True)
                 model.fit(X_train_upsamp, Y_train_upsamp, eval_set=eval_set,\
-                          eval_metric="auc", verbose=False,\
+                          eval_metric="aucpr", verbose=False,\
                           early_stopping_rounds=20)
                 
                 valid_promo_strat =\
@@ -293,6 +300,7 @@ def grid_search_indicator_pca(offer_num, max_depth_list, upsamp_ratio_list,\
                 print("Progress: {}/{}, Depth: {}, Ratio: {:.3f}, Weight: {}, Valid NIR: {:.2f}, Test NIR: {:.2f}".format(cnt, total_num_models, depth, up_ratio, weight, valid_nir, test_nir))
                 cnt += 1
                 
+                # record parameters for best validation NIR
                 if valid_nir > best_valid_nir:
                     best_valid_nir = valid_nir
                     best_test_nir = test_nir
@@ -302,4 +310,17 @@ def grid_search_indicator_pca(offer_num, max_depth_list, upsamp_ratio_list,\
                     print("Current Best Depth: {}, Upsampling Ratio: {}, Min Child Weight: {}".format(depth, up_ratio, weight))
                     print("Current Best Valid IRR: {:.2f}, NIR: {:.4f}".format(valid_irr, valid_nir))
                     print("Current Best Test IRR: {:.2f}, NIR: {:.4f}".format(test_irr, test_nir))
-    return best_depth, best_ratio, best_weight, best_valid_nir, best_test_nir
+                # record parameters that obtain positive valid and test NIR
+                if (valid_nir > 0) and (test_nir > 0):
+                    pos_strat_params.append((valid_nir, test_nir, depth, up_ratio, weight))
+                    
+    return best_depth, best_ratio, best_weight, best_valid_nir, best_test_nir, pos_strat_params
+
+def print_pos_strat_params(pos_strat_params):
+    for params in pos_strat_params:
+        valid_nir = params[0]
+        test_nir = params[1]
+        depth = params[2]
+        up_ratio = params[3]
+        weight = params[4]
+        print("Valid NIR: {:.2f}, Test NIR: {:.2f}, Tree Depth: {}, Upsampling Ratio: {:.2f}, Min Child Weight: {}".format(valid_nir, test_nir, depth, up_ratio, weight))
