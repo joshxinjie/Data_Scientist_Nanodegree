@@ -5,7 +5,7 @@ Analyze real-life data concerning a company that performs mail-order sales in Ge
 
 The goal of the project is to apply unsupervised learning techniques to identify segments of the German population that are popular with the mail-order firm.
 
-The resulting cluster analysis can be used for tasks such as identifying which facets of the population that are most likely to be purchasers of the firm's products for a mailout campaign. 
+The resulting cluster analysis can be used for tasks such as identifying which facets of the population are likely to purchase the firm's products for a mailout campaign. 
 
 ## Data
 1. Udacity_AZDIAS_Subset.csv: Demographic data for the general population of Germany; 891211 persons (rows) x 85 features (columns).
