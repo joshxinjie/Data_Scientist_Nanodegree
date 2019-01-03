@@ -7,6 +7,14 @@ The goal of the project is to apply unsupervised learning techniques to identify
 
 The resulting cluster analysis can be used for tasks such as identifying which facets of the population that are most likely to be purchasers of the firm's products for a mailout campaign. 
 
+## Data
+1. Udacity_AZDIAS_Subset.csv: Demographic data for the general population of Germany; 891211 persons (rows) x 85 features (columns).
+2. Udacity_CUSTOMERS_Subset.csv: Demographic data for customers of a mail-order company; 191652 persons (rows) x 85 features (columns).
+3. Data_Dictionary.md: Information file about the features in the provided datasets.
+4. AZDIAS_Feature_Summary.csv: Summary of feature attributes for demographic data.
+
+Due to agreements with Bertelsmann, the datasets cannot be shared or used for used for tasks other than this project. Files have to be removed from the computer within 2 weeks after completion of the project.
+
 ## Methodology
 1. Start with analyzing demographics data of general population. Deal with missing values in the dataset.
 2. Drop variables with extremely high frequencies of missing values.
