@@ -1,15 +1,25 @@
 # Starbucks Capstone Project
 
 ## Project Description
-This is my capstone project for the Udacity Data Scientists Nanodegree. This project involves simulated data that mimics customer behavior on the Starbucks rewards mobile app. 
+This is my capstone project for the Udacity Data Scientists Nanodegree. This project involves simulated data that mimics customer behavior on the Starbucks rewards mobile app.
 
-The goal of this project will be to implement a machine-learning based promotional strategy that identifies customers who are more likely to increase their expenditure when they are given a promotion as opposed to when they are not given a promotion. In addition, I will devise a testing methodology to evaluate the strategy's performance in real-life by calculating the Net Incremental Revenue (NIR) of the promotional strategy. This will estimate the amount of additional profits for Starbucks should the strategy be implemented.
+The data consists of customers' demographics attributes, promotions' details and timestamped customer transaction data.
 
 There are 10 different types of offers available. Starbucks will send these offer to users of the mobile app on a weekly basis. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). Some users might not receive any offer during certain weeks.
 
-For this project, each offer type will have its own individualized promotional strategy model. Customers' transactional behavior will be aggregated on a monthly basis. The first 15 months are be used as training data for the promotional strategy. Months 16 and 17 will be the validation months, and they will be used to tune the promotional strategies through grid search. Months 18 and 19 will serve as the tests months, and they will act as the final check of our promotional strategies.
+Through EDA, I noted that customers generally do not spend more than they normally do when given promotions. Hence, the goal of this project will be to implement a machine-learning based promotional strategy that identifies customers who are more likely to increase their expenditure if they are given promotions. The promotions will only be send to these promising customers.
 
-This proved to be a relatively challenging problem as evident by the results obtained.
+I will evaluate the strategy's performance by calculating the Net Incremental Revenue (NIR) of the promotional strategy. This will estimate the amount of additional profits for Starbucks should the strategy be implemented.
+
+The NIR will be calculated from individuals who our model predicts should receive the promotions. We will then look at their actual transaction history to calculate the NIR. 
+
+For example, our model predicts that Bob is a promising customer and shoud receive a discount promotion during the first month. The discount promotion has a difficulty of $10 (meaning he has to spend $10 to activate it), a reward of $2 and a validity period of 5 days (meaning he has to complete the offer with 5 days to activate the reward). Bob spends $11 to activate the promotion within its validity period. During the same month, Bob also spends a total of $5 during days when he did not received any promotion. The NIR will be:
+
+NIR = promotional revenue - cost of promotions - nonpromotional revenue = $11 - $2 - $5 = $4
+
+If the promotion is not activated, then there will be no cost.
+
+For this project, each offer type will have its own individualized promotional strategy model. Customers' transactional behavior will be aggregated on a monthly basis.
 
 The detailed write-up of the project can be found at the accompanying blog [post](https://medium.com/@joshxinjielee/designing-and-testing-a-promotion-strategy-for-starbucks-2f25ec9ae00c)
 
