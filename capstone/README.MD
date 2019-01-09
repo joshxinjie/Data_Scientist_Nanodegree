@@ -33,9 +33,9 @@ The data also requires substantial preprocessing. This will be performed in gene
 
 The code for the uplift models for each offer can be found in the files Model_Offer_0.ipynb/.../Model_Offer_9.ipynb.
 
-Part 1 of the project's write-up can be found [here](https://medium.com/@joshxinjielee/implementing-a-profitable-promotional-strategy-for-starbucks-with-machine-learning-part-1-2f25ec9ae00c)
+Part 1 of the project's write-up can be found [here](https://towardsdatascience.com/implementing-a-profitable-promotional-strategy-for-starbucks-with-machine-learning-part-1-2f25ec9ae00c)
 
-Part 2 of the project's write-up can be found [here](https://medium.com/@joshxinjielee/implementing-a-profitable-promotional-strategy-for-starbucks-with-machine-learning-part-2-8dd82b21577c)
+Part 2 of the project's write-up can be found [here](https://towardsdatascience.com/implementing-a-profitable-promotional-strategy-for-starbucks-with-machine-learning-part-2-8dd82b21577c)
 
 ## File Description
 ~~~~~~~
